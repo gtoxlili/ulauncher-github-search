@@ -1,0 +1,18 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Github search",
+    "description": "Convenient search for projects on Github",
+    "developer_name": "Junian",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 1
+    },
+    "preferences": [
+        {
+            "id": "keyword",
+            "type": "keyword",
+            "name": "Github",
+            "default_value": "gb"
+        }
+    ]
+}
