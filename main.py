@@ -29,7 +29,7 @@ class KeywordQueryEventListener(EventListener):
             ])
         else:
             result = requests.get(
-                "https://api.github.com/search/repositories?q=%s&sort=stars&page=1&order=desc&per_page=10" % query, headers={"Authorization": "token 9ba0255c370e43b0fc17cb23406cad74d4bd0a5b"}).json()
+                "https://api.github.com/search/repositories?q=%s&sort=stars&page=1&order=desc&per_page=10" % query ).json()
             items = []
             for i in result["items"]:
                 items.append(ExtensionResultItem(icon='images/icon.png',
